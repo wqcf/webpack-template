@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -18,146 +17,6 @@
 
 <body>
     <div class="box">
-        <div class="head">
-            <div class="nav">
-                <ul>
-                    <li class="l-f" style="width:130px;z-index:5;text-align:left;">首页</li>
-                </ul>
-            </div>
-            <div class="last">
-                <div class="time">
-                    <!-- <div class="t_top">
-                        <span>系统时间</span>
-                    </div> -->
-                    <div>
-                        <span class="t_bott"></span>
-                        <div style="color:#fff">
-                            <a class="date"></a>
-                            <span class="week"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="logout"></div>
-            </div>
-            <div class="current_status">
-                <span>当前状态：</span><span>安全</span>
-            </div>
-        </div>
-        <div class="content">
-            <div id="cesiumContainer"></div>
-
-            <div class="left_search">
-                <div class="left_search_title">
-                    <div class="left_search_title_icon" style="background: rgb(49, 167, 223); height: 20px; width: 7px; position: absolute; left: 0px; top: 8px; display: block;"></div>
-                    <h3>列表</h3>
-                    <div style="font-size: 12px;color: #fff;line-height: 26px; display: inline-block;float: right;">
-                        <span>总计：</span><span class="right_warning_title_num">11个</span>
-                    </div>
-                </div>
-                <div class="border_bottom"></div>
-                <div class="left_search_content">
-                    <div class="left_search_content_dim">
-                        <input class="left_search_content_dim_input input_background" type="text" name="please_enter" value="请输入场馆名称" onfocus="javascript:if(this.value=='请输入场馆名称')this.value='';" onblur="javascript:if(this.value=='')this.value='请输入场馆名称';"/>
-                        <div class="left_search_content_dim_search"></div>
-                        <div class="left_search_content_dim_clear"></div>
-                    </div>
-                    <div class="left_search_content_pull">
-                        <select id="s1" class="s input_background"><option>国家</option></select> 
-                        <select id="s2" class="s input_background"><option>省份、州</option></select> 
-                        <select id="s3" class="s input_background"><option>地级市、县</option></select> 
-                    </div>
-                    <div class="left_search_content_result">
-                        <div class="left_search_content_result_list input_background pull_menu_status">
-                            <h3>阿富汗大使馆</h3>
-                        </div>
-                        <div class="left_search_content_result_list1">
-                            <ul>
-                                <li>摄像头</li>
-                                <li>门禁</li>
-                                <li>其他设备</li>
-                                <li>循更线路</li>
-                            </ul>
-                            <div class="left_search_content_result_list1_input" >
-                                <input class="left_search_content_dim_input1 input_background" type="text" name="please_enter" value="请输入摄像头名称" onfocus="javascript:if(this.value=='请输入摄像头名称')this.value='';" onblur="javascript:if(this.value=='')this.value='请输入摄像头名称';" />
-                                <div class="left_search_content_dim_search"></div>
-                                <div class="left_search_content_dim_clear"></div>
-                            </div>
-                            <div class=".left_search_content_result_list1_input_box">
-                                <div class="left_search_content_result_list1_input_result">
-                                    <h3>摄像头1</h3>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="slide-button-left"></div>
-            </div>
-            <div class="right_warning"> 
-                <div style="position:relative; height:100%; width:100%" >
-                    <div class="slide-button-right"></div>
-                    <div class="right_warning_box">
-                        <div class="right_warning_title">
-                            <div class="right_warning_title_icon" style="background: rgb(49, 167, 223); height: 20px; width: 7px; position: absolute; left: 0px; top: 11px; display: block;"></div>
-                            <h3>告警列表</h3>
-                            <div style="position:absolute;font-size: 12px;color: #fff; top:0; right:28px;">
-                                <span>总计：</span><span class="right_warning_title_num">11条</span><span>> ></span>
-                            </div>
-                        </div>
-                        <div class="border_bottom"></div>
-                        <div class="right_warning_list">
-                            <!-- <div class="right_warning_list_num">
-                                <div class="gaojing_icon"></div>
-                                <div style="width:2px; height: 100%;background: #00BAF8; margin-left:16px; margin-right:12px;"></div>
-                                <div style="position: relative;top: -5px;">
-                                    <div class="right_warning_list_num_time">
-                                        <span class="right_warning_list_num_time_1">1.</span><span class="right_warning_list_num_time_2">01/11/2018 09:25:15</span>
-                                    </div>
-                                    <div class="right_warning_list_num_content" >
-                                        <span class="right_warning_list_num_content_1">【冲突告警】</span><div class="right_warning_list_num_content_2">031233与333313车队在XX路口冲突</div>   
-                                    </div>
-                                </div>
-                            </div> -->
-                        </div>
-                    </div>
-                    
-                </div>
-                
-            </div>
-            <div class="content_video">
-                <div class="content_video_head">
-                    <div class="right_warning_title_icon" style="background: rgb(49, 167, 223); height: 20px; width: 7px; position: absolute; left: 0px; top: 20%; display: block;"></div>
-                    <span>摄像头视角</span>
-                    <div class="content_video_head_right">
-                        <div class="content_video_head_right_minimize"></div>
-                    </div>
-                </div>
-                <div class="h5videodiv">
-                    <video class="h5video h51" id="h5sVideo1" webkit-playsinline playsinline>
-                    </video>
-                    <div class="playpause" id="playpause1" ></div>
-                </div>
-                <div class="content_video_button">
-                    <ul>
-                        <li class="change change1"></li>
-                        <li class="change"></li>
-                        <li class="change"></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="content_video_icon">
-
-            </div>
-            <div id="btns">
-                <div class="tucengtubiao-luwang" style="background-color: #25618f;">
-                </div>
-                <div class="tucengtubiao-honglvdeng" style="background-color: #25618f;">
-                </div>
-                <div class="tucengtubiao-shexiangtou" style="background-color: #25618f;">
-                </div>
-            </div>
-        </div>
-
     </div>
     <div class="hidden">
         <script type="text/javascript">
@@ -176,7 +35,7 @@
                     "/assets/list_background1.png"
                 )
         </script>
-        </div>
+    </div>
 </body>
 
 </html>
